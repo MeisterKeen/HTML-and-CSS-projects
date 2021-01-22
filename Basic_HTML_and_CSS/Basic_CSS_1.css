@@ -1,4 +1,21 @@
-p	{
+h1
+{
+		color: SkyBlue;
+		text-align: center;
+}
+	
+p
+{
 		color: SteelBlue;
 		text-align: center;
-	}
+}
+	
+.mainhead
+{
+	background-color: black;
+	color: SkyBlue;
+	font-family: Courier New;
+	font-weight: bold;
+}
+
+.maintext

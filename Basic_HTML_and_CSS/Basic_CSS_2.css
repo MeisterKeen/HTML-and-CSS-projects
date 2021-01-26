@@ -2,20 +2,23 @@
 body
 	{
 	font-style: italic;
-	text-align: left;
+	text-align: center;
+	font-family: Helvetica;
+	background-color: skyblue;
 	}
-	
+
 p
 	{
 	color: beige;
 	background: steelblue;
-	text-align: center;
 	font-size: large;
-	font-family: Helvetica;
 	}
-	
-/*Oh look, here's how to comment in CSS*/
 
+h1 	{
+	text-shadow: 1px 1px red
+	}
+
+/*Oh look, here's how to comment in CSS*/
 
 th
 	{
@@ -23,15 +26,12 @@ th
 	background: steelblue;
 	text-align: center;
 	font-size: large;
-	font-family: Helvetica;
 	}
-
 
 tr
 	{
 	color: steelblue;
 	text-align: center;
 	font-size: large;
-	font-family: helvetica;
 	}
 	

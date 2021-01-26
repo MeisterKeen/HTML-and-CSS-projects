@@ -1,0 +1,47 @@
+
+body{
+	font-style: italic;
+	text-align: left;
+	}
+	
+p	{
+	color: beige;
+	background: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: Helvetica;
+	}
+	
+/*Oh look, here's how to comment in CSS*/
+
+table{
+	border: 1px solid silver;
+	}
+
+td:hover{
+	background-color: SkyBlue;
+	color: black;
+	}
+
+th	{
+	color: beige;
+	background: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: Helvetica;
+	}
+
+tr	{
+	color: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: helvetica;
+	}
+	
+ol 	{
+	list-style-type: upper-roman;
+	}
+	
+ul 	{
+	list-style-type: square;
+	}

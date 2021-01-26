@@ -1,0 +1,37 @@
+
+body
+	{
+	font-style: italic;
+	text-align: left;
+	}
+	
+p
+	{
+	color: beige;
+	background: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: Helvetica;
+	}
+	
+/*Oh look, here's how to comment in CSS*/
+
+
+th
+	{
+	color: beige;
+	background: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: Helvetica;
+	}
+
+
+tr
+	{
+	color: steelblue;
+	text-align: center;
+	font-size: large;
+	font-family: helvetica;
+	}
+	

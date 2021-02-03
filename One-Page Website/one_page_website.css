@@ -1,0 +1,149 @@
+body {
+    background-color: #66ccff;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/*-------------------------------------------------------
+        NAV STYLES
+-------------------------------------------------------*/
+
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    margin: 0% auto;
+}
+
+.menu {
+
+}
+
+/*-------------------------------------------------------
+        MAIN SPLASH STYLES
+-------------------------------------------------------*/
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#home {
+    background: url(images/Stehekin_Chelan.jpg) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px;
+    padding-bottom: 500px;
+    color: #fff;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9), -2px -1px 5px rgba(0, 0, 0, 0.6);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.head-sub-main {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 50px 20px 10px 20px;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px 20px 20px 20px;
+    border: 1px dotted #fff;
+    padding: 5px;
+}
+
+/*-------------------------------------------------------
+        GALLERY STYLES AND ANIMATION
+-------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------
+        VIDEO EMBED
+-------------------------------------------------------*/
+
+.frametube {
+    margin: 100px;
+    padding: 50px;
+    background-color: black;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid steelblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*-------------------------------------------------------
+        NEWSLETTER FORM
+-------------------------------------------------------*/
+
+.form-container {
+    width: 60%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(125, 50, 50);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+input[type=submit]:hover {
+    background-color: skyblue;
+    color: black;
+}

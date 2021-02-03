@@ -2,149 +2,72 @@
 
 <html>
 
+	<!--  -->
 	<head>
-
 		<title>Welcome to beautiful Lake Chelan!</title>
 		<meta charset="utf-8">
-
-		<!-- Put these styles in a css doc later: -->
-		<!--link rel="stylesheet" type="text/css" href=""-->
-		<style>
-
-			body
-				{
-				text-align: center;
-				font-family: helvetica;
-				font-weight: bold;
-				background-color: #66ccff;
-				}
-
-			main
-				{
-				background-image: url("chelanback.jpg");
-				background-repeat: no-repeat;
-				background-position: center;
-				background-color: black;
-				}
-
-			h1	{
-				padding: 80px 40px;
-				text-align: center;
-				font-size: 60px;
-				font-family: helvetica;
-				color: white;
-				font-weight: bold;
-				text-shadow: 3px 3px black;
-				}
-
-			h3	{
-				padding: 50px 100px;
-				font-family: helvetica;
-				color: white;
-				text-shadow: 2px 2px black;
-				font-weight: bold;
-				margin-bottom: 5em;
-				font-size: 25px;
-				}
-
-			nav
-				{
-				text-align: left;
-				}
-
-		</style>
+		<link rel="stylesheet" type="text/css" href="one_page_website.css">
 	</head>
 
 	<body>
 
 		<!-- NAV -->
-		<div id="home">
-			<nav>
-				<a href="#home" id="link"> HOME -</a>
-				<a href="#gallery" id="link"> GALLERY -</a>
-				<a href="#contact" id="link"> CONTACT </a>
-			</nav>
-			<br>
+		<div class="navbar-container">
+			<div class="navbar">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>CONTACT</li></a>
+				</ul>
+			</div>
 		</div>
 		<!-- END NAV -->
 
-		<!-- MAIN SPLASH -->
-		<section>
-		<main>
-			<div>
-				<br>
-				<h1>Welcome to beautiful Lake Chelan!</h1>
-				<h3 align="center" width="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-					nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-					irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-					anim id est laborum.</h3>
-				<br>
-			</div>
-		</main>
-		</section>
-		<!-- END MAIN SPLASH -->
 
-		<!--GALLERY-->
-		<section>
-		<div id="gallery">
-			<div>
-				<h2>G A L L E R Y</h2>
-				<table align="center" width="80%">
-					<tr>
-						<th>
-							<img src="Stehekin_Chelan.jpg" width="500" alt="Stehekin, on northern Lake Chelan">
-						</th>
-						<th>
-							<img src="Stehekin.jpg" width="500" alt="">
-						</th>
-					</tr>
-					<tr>
-						<th>
-							<img src="chelanback.jpg" width="500" alt="">
-						</th>
-						<th>
-							<img src="Wapato.jpg" width="500" alt="">
-						</th>
-					</tr>
-				</table>
+		<!-- MAIN SPLASH -->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Lake Chelan</span>
+				</div>
 			</div>
 		</div>
-		</section>
+		<!-- END MAIN SPLASH -->
+
+
+		<!--GALLERY-->
+
 		<!-- END GALLERY -->
 
 
 		<!-- VIDEO EMBED -->
-		<section>
-		<div>
-			<iframe width="800" height="600"
-				src="https://www.youtube.com/embed/RjmV0XIYzRE">
+		<div class="frametube">
+			<iframe
+				width="800" 
+				height="600"
+				src="https://www.youtube.com/embed/RjmV0XIYzRE"
+				allowfullscreen>
 			</iframe>
 		</div>
-		</section>
 		<!-- END VIDEO EMBED -->
 
 		<!-- SIGNUP -->
-		<section>
-			<div id="contact">
+			<div id="newsletter">
 				<div>
-					<div>
+					<div class="form-container">
 						<h2><span>Please sign up for our newsletter!</span></h2>
 						<div>
 							<form action="" method="post">
-								<input  type="text" value="Name">
-								<input  type="text" value="Email Address">
+								<input  type="text" value="" placeholder="Your Name...">
+								<input  type="text" value="" placeholder="Your Email Address...">
 								<div>
-									<br>
-									<input type="submit" value="Click to sign up!">
+									<input type="submit" value="Submit">
 								</div>
 							</form>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
 		<!-- END SIGNUP -->
 
 	<footer>

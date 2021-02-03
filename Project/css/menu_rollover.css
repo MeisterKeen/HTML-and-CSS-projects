@@ -3,6 +3,10 @@ body {
     background: #184392;
 }
 
+a {
+    color: inherit;
+}
+
 .wrap {
     top: 0;
     left: 0;

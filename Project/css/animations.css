@@ -69,7 +69,8 @@ p {
     height: 169px;
 }
 
-.photo-overlay {
+/*Drops the photo overlay text directly on top of the thumbnail/photo*/
+.photo-overlay { 
     color: #fff;
     position: absolute;
     top: 0;
@@ -92,6 +93,7 @@ p {
     Photo Overlay Transitions
 ------------------------------------------------------*/
 
+/*Sets up the opacity transition*/
 .photo-overlay {
     opacity: 0;
     transition: opacity .5s;
@@ -99,12 +101,14 @@ p {
     cursor: pointer;
 }
 
+
 .photo-overlay p {
     width: 100%;
     height: 100%;
     color: #fff;
 }
 
+/*Remember to actually call this class inside the photo container*/
 .photo-overlay:hover {
     opacity: 1
 }

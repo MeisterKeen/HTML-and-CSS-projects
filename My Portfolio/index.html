@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+        <title>Keen Little</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	</head>
+
+	<body class="background">
+
+        <!-- NAV BAR - fixed at top -->
+        <div class="navbar">
+                <a class="active" href="#home">Home</a>
+                <a href="#About">About</a>
+                <a href="#GitHub">GitHub</a>
+                <a href="Contact">Contact</a>
+        </div>
+
+    <br>    <!-- Spacer breaks -->
+    <br>    <!-- Is there a more elegant way to do this? -->
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Coding_Video">
+                <source src="Resources/Blurred Video of Scripts Being Typed.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Text overlay on top of the video -->
+        <div class="Video_Text">
+            <h1 class="white-text">Keen Little &mdash; Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>"That's the thing about people who think they hate computers.
+                        <br>What they really hate is lousy programmers."
+                        <br>&mdash;Larry Niven
+                    </q>
+                    <br>
+                    <br>My name is Keen Little
+                    <br>Thank you for visiting my porfolio site.
+                    <br>
+                </p>
+            </strong>
+        </div>
+
+        <!-- About section -- two-column row layout -->
+        <div class="Row" id="About">
+            <!-- Left col -->
+            <div class ="Column_2">
+                <img src="" alt="">
+            </div>
+            <!-- Right col -->
+            <div class=Column_1>
+                <h1>About</h1>
+                <p>
+                    I am a software developer who -- 
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp.
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub section -- continuing two-column layout -->
+        <div class="Row" id="GitHub">
+            <!-- Left col -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/MeisterKeen" target="_blank"></a></p>
+                </p>
+            </div>
+            <!-- Right col -->
+            <div class="Row" id="Contact">
+                <img src="" alt="">
+            </div>
+        </div>
+
+        <!-- Contact section -- more two-column -->
+        <div class="Row" id="Contact">
+            <!-- Left col image -->
+            <div class="Column_2 Column_tall">
+                <img src="./Resources/Mail.jpeg" alt="">
+            </div>
+            <!-- Right col contact -->
+            <div>
+                <form action="" method="POST">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" placeholder="Please enter your email address">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>
+                <p class="center">MeisterKeen&nbsp;|&nbsp;2021</p>
+                <br>
+            </p>
+        </footer>
+
+    </body>
+
+</html>

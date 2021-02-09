@@ -1,0 +1,117 @@
+@media screen and (max-width: 600px) {
+    html{
+        color: blue;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: beige;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+
+img {
+    filter: grayscale(99%);
+    margin: -40px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.image1 {
+    position: relative;
+    width:750px;
+    height:500px;
+    border-radius:40px;
+    overflow: hidden;
+    border: 15px solid transparent;
+    text-align: center;
+}
+
+.video1 {
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gray ;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px black
+}
+
+.table1 {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th {
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: beige;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    color: gray;
+}
+
+.column p:hover {
+    color: red;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}

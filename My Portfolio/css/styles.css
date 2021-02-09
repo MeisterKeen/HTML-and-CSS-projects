@@ -1,0 +1,239 @@
+/******* GENERAL STYLE RULES */
+
+body {
+    margin: 0%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: teal
+}
+
+h1:hover {
+    filter: greyscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s
+}
+
+.white-text {
+    color: #fff;
+}
+
+p {
+    font-family: Roboto, arial, sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;  /* Actually not a fan of this, might remove it */
+    transform: scale (1.01);
+}
+
+.center {
+    text-align: center;
+}
+
+.center-hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: greyscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+}
+
+/* Resolves issue with small screens being blasted with overlarge images */
+@media screen and (max-width: 576px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+/******* END OF GENERAL STYLES */
+/******* HERE BE NAV BAR */
+
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+    /* Now sliiiiide to the right! */
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garde, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+    /* Now DROP */
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+    /* Again, gotta fix issues for smaller screens */
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar a.active {
+    background-color: darkgray;
+}
+
+/******* END OF NAV STUFF */
+/******* VIDEO STYLES */
+
+#Coding_Video {
+    position: fixed;
+    top: -500px;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+    /* Look, just get bigger screens, people */
+@media screen and (max-width: 576px) {
+    #Coding_Video {
+        display: none;
+    }
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation:moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+    /* Now JUMP */
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+/******* END VIDEO STYLES */
+/******* TABLE STYLING */
+
+* {
+    box-sizing: border-box;
+}
+
+    /* These Column_1's are the texty content-y ones */
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+    /* This one's for the pretty pictures, yay! */
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+    /* Little extra room for that contact form */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+    /* little breathing room, here */
+.Row:after {
+    content: "";
+    display: table;
+    clear: both; /* Handy -- wipes out any floating elements right or left of this one */
+}
+
+/******* END TABLE STYLES */
+/******* CONTACT FORM STYLES */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;  /* Not sure this is actually working */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+}

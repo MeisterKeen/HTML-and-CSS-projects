@@ -6,20 +6,14 @@ body {
 
 h1 {
     text-transform: uppercase;
-    font-family:'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-family: Lexend Mega, Helvetica, sans-serif;
     text-align: center;
     margin-top: 3%;
-    color: teal
-}
-
-h1:hover {
-    filter: greyscale(5%);
-    transform: scale(1.1);
-    transition: transform 1s
+    color: rgb(25, 75, 75)
 }
 
 .white-text {
-    color: #fff;
+    color: beige;
 }
 
 p {
@@ -29,11 +23,6 @@ p {
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-p:hover {
-    transition: transform 1s;  /* Actually not a fan of this, might remove it */
-    transform: scale (1.01);
 }
 
 .center {
@@ -81,7 +70,7 @@ img:hover {
 
 .Navbar {
     overflow: hidden;
-    background-color: black;
+    background-color: rgb(25, 75, 75);
     position: fixed;
     top: 0;
     width: 100%;
@@ -193,7 +182,7 @@ img:hover {
     padding: 10px;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    background-color: rgb(25, 75, 75);
 }
 
     /* Little extra room for that contact form */

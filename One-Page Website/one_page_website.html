@@ -6,20 +6,17 @@
 	<head>
 		<title>Welcome to beautiful Lake Chelan!</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="one_page_website.css">
+		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./js/main.js" defer></script>
 	</head>
 
 	<body>
 
 		<!-- NAV -->
-		<div class="navbar-container">
-			<div class="navbar">
-				<ul class="menu">
-					<a href="#home"><li>HOME</li></a>
-					<a href="#gallery"><li>GALLERY</li></a>
-					<a href="#contact"><li>CONTACT</li></a>
-				</ul>
-			</div>
+		<div class="navbar">
+			<a href="#home"><li>HOME</li></a>
+			<a href="#gallery"><li>GALLERY</li></a>
+			<a href="#contact"><li>CONTACT</li></a>
 		</div>
 		<!-- END NAV -->
 
@@ -28,14 +25,82 @@
 		<div id="home">
 			<div class="container">
 				<div class="text-center">
-					<span class="head-main">Lake Chelan</span>
+					<span class="head-main">Lake Chelan</span> <br>
+					<span class="head-sub-main">The Best Place in the Pacific Northwest</span>
 				</div>
 			</div>
 		</div>
 		<!-- END MAIN SPLASH -->
 
+<br>
 
-		<!--GALLERY-->
+		<!--LIGHTBOX GALLERY-->
+
+		<div class="row">
+
+			<div class="column">
+				<img 	src="./images/slide1.jpg"
+						style="width:100%"
+						onclick="openModal();currentSlide(1)"
+						class="hover-shadow cursor">
+			</div>
+
+			<div class="column">
+				<img 	src="./images/slide2.jpg"
+						style="width:100%"
+						onclick="openModal();currentSlide(2)"
+						class="hover-shadow cursor">
+			</div>
+
+			<div class="column">
+				<img 	src="./images/slide3.jpg"
+						style="width:100%"
+						onclick="openModal();currentSlide(3)"
+						class="hover-shadow cursor">
+			</div>
+
+			<div class="column">
+				<img 	src="./images/slide4.jpg"
+						style="width:100%"
+						onclick="openModal();currentSlide(4)"
+						class="hover-shadow cursor">
+			</div>
+
+		</div>
+
+		<div id="lightbox" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="slides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./images/slide1.jpg" style="width:100%">
+				</div>
+
+				<div class="slides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./images/slide2.jpg" style="width:100%">
+				</div>
+
+				<div class="slides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./images/slide3.jpg" style="width:100%">
+				</div>
+
+				<div class="slides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./images/slide4.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+			</div>
+		</div>
 
 		<!-- END GALLERY -->
 

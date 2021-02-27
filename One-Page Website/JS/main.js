@@ -1,3 +1,9 @@
+// ------------- FADE-OUT EFFECT --------------- //
+
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+
 
 // ----------- LIGHTBOX FUNCTIONALITY ---------- //
 
@@ -41,3 +47,28 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
     captionText.innerHTML = dots[slideIndex-1].alt;
 } 
+
+// ------------ FORM EMPTY ALERTS -------------------- //
+
+function validateForm() {
+    var x = document.forms["newsletter"]["name"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    };
+    var x = document.forms["newsletter"]["email"].value;
+    if (x == "") {
+        alert("Please enter a valid email address");
+        return false;
+    };
+}
+
+// --------------- POP-UP FORM  ----------------------- //
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}

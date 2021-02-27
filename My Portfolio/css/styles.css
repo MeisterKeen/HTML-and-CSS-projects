@@ -9,7 +9,8 @@ h1 {
     font-family: Lexend Mega, Helvetica, sans-serif;
     text-align: center;
     margin-top: 3%;
-    color: rgb(25, 75, 75)
+    color: rgb(25, 75, 75);
+    font-size: 2.5vw;
 }
 
 .white-text {

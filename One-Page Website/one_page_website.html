@@ -11,6 +11,11 @@
 	</head>
 
 	<body>
+		<!-- Fade effect -->
+		<script>
+			document.body.classList.add('fade-out');
+		</script>
+
 
 		<!-- NAV -->
 		<div class="navbar">
@@ -138,9 +143,9 @@
 					<div class="form-container">
 						<h2><span>Please sign up for our newsletter!</span></h2>
 						<div>
-							<form action="" method="post">
-								<input  type="text" value="" placeholder="Your Name...">
-								<input  type="text" value="" placeholder="Your Email Address...">
+							<form onsubmit="return validateForm()" name="newsletter" action="" method="post">
+								<input  name="name" type="text" value="" placeholder="Your Name...">
+								<input  name="email" type="email" value="" placeholder="Your Email Address...">
 								<div>
 									<input type="submit" value="Submit">
 								</div>
@@ -150,6 +155,26 @@
 				</div>
 			</div>
 		<!-- END SIGNUP -->
+
+		<!-- POPUP FORM -->
+			<button class="open-button" onclick="openForm()">Newsletter Signup</button>
+
+			<div class="form-popup" id="myForm">
+				<form action="" class="popup-form-container">
+					<h1>newsletter</h1>
+
+					<label for="name"><b>Name</b></label>
+					<input type="text" placeholder="Your Name..." name="email" required>
+
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Your Email..." name="email" required>
+
+					<button type="submit" class="btn">Login</button>button>
+					<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+				</form>
+			</div>
+		<!-- END POPUP FORM-->
+
 
 	<footer>
 		<h6 align="right">MeisterKeen&nbsp;&copy;2021</h6>

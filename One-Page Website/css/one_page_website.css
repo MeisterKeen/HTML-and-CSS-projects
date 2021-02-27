@@ -1,8 +1,19 @@
+html {
+    background-color: black;
+}
+
 body {
     background-color: steelblue;
     font-family: 'Roboto', Helvetica, sans-serif;
     font-size: 18px;
     color: beige;
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 * {
@@ -258,9 +269,19 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgb(125, 50, 50);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
 input[type=submit] {
     width: 100%;
-    background-color:  slateblue;
+    background-color:  rgb(107, 142, 196);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -271,4 +292,65 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: skyblue;
     color: black;
+}
+
+
+/*-------------------------------------------------------
+        POP-UP FORM STYLES
+-------------------------------------------------------*/
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup {
+    display: none; /* Hide the form by default */
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.popup-form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.popup-form-container input[type=text],
+.popup-form-container input [type=email] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.popup-form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.popup-form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
 }

@@ -47,6 +47,48 @@
                 </p>
             </strong>
         </div>
+        <br>
+
+        <!-- NEW SLIDESHOW GOES HERE -->
+
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 3</div>
+                        <img class="Slide_Show_Images" src="./Resources/keen.png" style="width:100%">
+                        <div class="text">Hello! My name is Keen!<br>I am a full-stack software developer.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 3</div>
+                        <img class="Slide_Show_Images" src="./Resources/languages.png" style="width:100%">
+                        <div class="text">I am capable of working with a<br>variety of languages and platforms!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 3</div>
+                        <img class="Slide_Show_Images" src="./Resources/mailslide.jpeg" style="width:100%">
+                        <div class="text">Feel free to contact me! I look forward to working with you on your project.</div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <br>
+
+                <div style="text-align: center">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+
+                </div>
+            </div>
+        </div>
 
         <!-- About section -- two-column row layout -->
         <div class="Row" id="About">
@@ -87,24 +129,28 @@
             </div>
         </div>
 
-        <!-- Contact section -- more two-column -->
-        <div class="Row" id="Contact">
-            <!-- Left col image -->
-            <div class="Column_2 Column_tall">
-                <img src="./Resources/Mail.jpeg" alt="">
-            </div>
-            <!-- Right col contact -->
-            <div class="Column_1">
-                <form action="" method="POST">
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" placeholder="Please enter your email address">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
-            </div>
+            <!-- POPUP CONTACT FORM -->
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+                <div class="form-popup" id="popupForm">
+                    <form action="" method="" class="form-container">
+                        <h1>Contact</h1>
+                            <label for="name"><b>Name</b></label>
+                            <input type="text" placeholder="Your Name..." name="name" required>
+                            
+                            <label for="phone"><b>Phone</b></label>
+                            <input type="text" placeholder="Your Phone..." name="phone">
+                            
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Your Email..." name="email" required>
+
+                            <label for="message"><b>Message</b></label>
+                            <input type="text" placeholder="Your Message Here..." name="message">
+
+                            <button type="submit" class="btn">SUBMIT</button>
+                            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
+                </div>
         </div>
 
         <!-- Footer section -->
@@ -114,6 +160,8 @@
                 <br>
             </p>
         </footer>
+
+        <script src="js/main.js"></script>
 
     </body>
 

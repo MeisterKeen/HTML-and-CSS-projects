@@ -1,0 +1,50 @@
+/*******************************************************************************
+*                               GENERAL STYLES                                 *
+*******************************************************************************/
+
+body {
+    background-image: url(../shipsea.jpg);
+    background-size: 100%;
+
+}
+
+.pageTitle h1 {
+    font-family: "Source Code Pro", Helvetica, Arial, sans-serif;
+    font-size: 300%;
+    text-align: center;
+    color: beige;
+    text-shadow: 4px 4px black;
+}
+
+/*******************************************************************************
+*                               NAVBAR STYLES                                  *
+*******************************************************************************/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.navbar .active {
+    background-color: darkslategray;
+}
+

@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 	<head>
         <meta charset="utf-8">
-
         <title>The Sea Shanty App</title>
-        <meta name="description" content="">
+        <meta name="description" content="An App for Displaying And Singing Along to Sea Shanties">
         <meta name="author" content="Keen Little">
 		<link rel="stylesheet" type="text/css" href="./css/shanty.css">
     </head>
@@ -29,23 +27,157 @@
         <div class="pageTitle">
             <h1>The Sea Shanty App</h1>
         </div>
-
-        <!-- song title -->
-
         <hr>
-        <div class="songTitle">
-            <h2>Song Title</h2>
+
+        <!-- EVERYTHING ABOVE HERE is in the BASE HTML
+                Page-specific content below:
+        -->
+
+        <!-- song title:
+            This needs to include a drop-down menu that allows the user to select
+            a song, and generates a page that displays said song along with its
+            associated content.
+        -->
+
+        <div class="center">
+            <div class="dropdown">
+                <button onclick="SongSelector()" class="dropbtn">Select a Song</button>
+                <div id="SongList" class="dropdown-content">
+                    <a href="#">song 1</a>
+                    <a href="#">song 2</a>
+                    <a href="#">song 3</a>
+                </div>
+            </div>
         </div>
 
-        <!-- Youtube embed -->
+        <div class="songTitleDiv">
+            <h2>Bones In The Ocean</h2>
+        </div>
 
-        <!-- Lyrics -->
+        <!-- Youtube/Spotify embed 
+            The embed link will need to be a Django call to SeaShanties.videoURL
+            for the selected song
+        -->
 
-        <!-- Song Origin -->
+        <div class="videoFrameDiv">
+            <iframe src="https://open.spotify.com/embed/track/3axCgesL3rsjGzCX9ZJCTo" 
+                    width="700" height="380" frameborder="0" allowtransparency="true" 
+                    allow="encrypted-media">
+            </iframe>
+        </div>
+
+        <!-- Lyrics 
+            The content inside the "lyricsDiv" needs to be called in from
+            SeaShanties.lyrics
+        -->
+
+        <div class="grid">
+            <div class="gridMain">
+            <h2>Lyrics</h2>
+                <div class="lyricsDiv">
+                    <p>Oh, I bid farewell to the port and the land</p>
+                    <p>And I paddle away from brave England's white sands</p>
+                    <p>To search for my long ago forgotten friends</p>
+                    <p>To search for the place I hear all sailers end</p>
+                    <br>
+                    <p>As the souls of the dead fill the space of my mind</p>
+                    <p>I'll search without sleeping 'til peace I can find</p>
+                    <p>I fear not the weather, I fear not the sea</p>
+                    <p>I remember the fallen, do they think of me?</p>
+                    <p>When their bones in the ocean forever will be</p>
+                    <br>
+                    <p>Plot a course to the night to a place I once knew</p>
+                    <p>To a place where my hope died along with my crew</p>
+                    <p>So I swallow my grief and face life's final test</p>
+                    <p>To find promise of peace and the solace of rest</p>
+                    <br>
+                    <p>As the songs of the dead fill the space of my ears</p>
+                    <p>Their laughter like children, their beckoning cheers</p>
+                    <p>My heart longs to join them, sing songs of the sea</p>
+                    <p>I remember the fallen, do they think of me?</p>
+                    <p>When their bones in the ocean forever will be</p>
+                    <br>
+                    <p>When at last before my ghostly shipmates I stand</p>
+                    <p>I shed a small tear for my home upon land</p>
+                    <p>Though their eyes speak of depths filled with struggle and strife</p>
+                    <p>Their smiles below say I don't owe them my life</p>
+                    <br>
+                    <p>As the souls of the dead fill the space of my eyes</p>
+                    <p>And my boat listed over and tried to capsize</p>
+                    <p>I'm this far from drowning, this far from the sea,</p>
+                    <p>I remember the living do they think of me?</p>
+                    <p>When my bones in the ocean forever will be</p>
+                    <br>
+                    <p>Now that I'm staring down at the darkest abyss</p>
+                    <p>I'm not sure what I want but I don't think it's this</p>
+                    <p>As my comrades call to stand fast and forge on</p>
+                    <p>I make sail for the dawn 'til the darkness has gone</p>
+                    <br>
+                    <p>As the souls of the dead live for'er in my mind</p>
+                    <p>As I live all the years that they left me behind</p>
+                    <p>I'll stay on the shore but still gaze at the sea</p>
+                    <p>I remember the fallen and they think of me</p>
+                    <p>For our souls in the ocean together will be</p>
+                    <br>
+                    <p>I remember the fallen and they think of me,</p>
+                    <p>For our souls in the ocean together will be</p>
+                </div>
+            </div>
+
+            <!-- Song Origin 
+                Here we're calling in SeaShanties.artist, .history and .year
+            -->
+            <div class="gridRight">
+                <h2>Song Origin</h2>
+                <div class="historyDiv">
+                    <div class="dateArtist">
+                        <p>Year: 2013</p>
+                        <p>Artist: The Longest Johns</p>
+                    </div>
+                    <div class="historyBlurb">
+                        <p>This is an original shanty, written by historical shanty-singers The Longest Johns and released on the 27th of May in 2013.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer nav -->
 
+        <br>
+        <br>
+        <br>
+        <div class="footbar">
+            <ul>
+                <li><a class="active" href="#home"> Home </a></li>
+                <li><a href="#"> Songs </a></li>
+                <li><a href="#"> Submit </a></li>
+                <li><a href="#"> Admin </a></li>
+            </ul>
+        </div>
+
         <!-- byline -->
+
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function SongSelector() {
+  document.getElementById("SongList").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+    </script>
 
     </body>
 
